@@ -1,0 +1,34 @@
+# input section
+get inputs: 3 guests
+choices available: 4 (main, dessert, both, none)
+
+
+# processing section
+
+# initiialize counters
+main_counter, dessert_counter = 0
+# initialize array to track guest choices
+guest_choices_dict = {}
+
+for each guest:
+    if choice == main:
+        increment main_counter
+        update guest_choices_dict
+    else if choice == dessert:
+        increment dessert_counter
+        update guest_choices_dict
+    else if choice == both:
+        increment main_counter, dessert_counter
+        update guest_choices_dict
+    else if none:
+        do nothing
+    endif
+
+
+# output section
+
+# output number of mains, dessert required
+output main_counter, dessert_counter
+
+# output guest choices
+output guest_choices_dict
